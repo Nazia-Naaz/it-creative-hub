@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: mulish, sans-serif;
+   
   
 }
 #main{
@@ -10,42 +12,24 @@
     background-color: #08111F;
    
 }
-#cursor{
-    position: relative;
+#page1{
+    height: 100vh;
+    width: 100%;
 }
-.cursor{
-    height: 7px;
-    width: 7px;
-    background-color: #eee9e9;
-}
-.cursor2{
-width: 30px;
-height: 30px;
-border: 2px solid #0AE448;
-}
-.cursor, .cursor2{
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 1;
-    pointer-events: none;
-}
-
-
 
 #navbar{
-    height: 14vh;
+    height: 100px;
     background-color: #08111F;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+     padding: 0 5vw;
+     border-bottom: 2px solid #dadada;
    
    
 }
 #logo img{
-    height: 10vh;
+    height: 5vw;
 }
 #nav-part2{
     color: #fff;    
@@ -57,35 +41,38 @@ border: 2px solid #0AE448;
    
 }
 #nav-part2 ul li:hover{
-    color: #0AE448;
+    color: #F48C06;
+}
+#nav-part2 i {
+    font-size: 1.8vw;
+    font-weight: 800;
+    display: none;
 }
 #about{
-    height: 100vh;
+    height: calc(100% - 100px);
     width: 100%;
     background-color:#08111F;
-   
-
     display: flex;
     align-items: center;
     justify-content: center;
-  /*  border-bottom: 2px solid #08111F;
-    border-bottom-right-radius: 10%;
-    border-bottom-left-radius: 10%; */
-    
-    
-    
+  
 }
 #about-text{
     height: 80vh;
     width: 50%;
     background-color:#08111F;
     color: #fff;
-   padding-top: 27vh;
-   padding-left: 20vh;
+   padding: 7vw 5vw;
    font-size: 3vh;
+   
    
 
 }
+#about-text h1{
+    font-size: 2.8;
+
+}
+
 #about-text samp{
     color:#F48C06;
 }
@@ -96,6 +83,7 @@ border: 2px solid #0AE448;
     color: #fff;
     padding-top: 6vh;
     font-size: 2.8vh;
+
 }
 button{
     padding: 10px 20px;
@@ -128,287 +116,68 @@ button:hover{
     padding-right: 10vh;
 }
 
-#page4{
-    height: 100vh;
-    width: 100%;
-    background-color:#08111F;
-   margin-top: 10vh;
-    position: relative;
+@media (max-width:600px) {
+    #navbar{
+      height: 60px;
+        padding: 0 6vw;
+    }
+    #logo img{
+        height: 6vw;
+    }
+    #nav-part2 ul li{
+        font-size: 4vw;
+        display: none;
+    }
+    #nav-part2 i{
+        display: block;
+        font-size: 6vw;
+    }
+    #about{
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+    #about-text{
+        width: 100%;
+        height: 55%;
+        padding: 5vw 4vw;
 
-   
+    }
+    #about-img{
+        width: 100%;
+        height: 45%;
+        padding-left: 5vw;
+
+    }
+    #about-text h1{
+        font-size: 8vw;
+    
+    }
+    #about-text p{
+        font-size: 4vw;
+        width: 90%;
+        margin-top: 2.5vw;
+        margin-bottom: 3vw;
+    
+    }
+    #about button{
+        padding: 5px 10px;
+        border: 2px solid #fff;
+        background-color: #FE6918;
+        border-radius: 50px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 3.5vw;
+        margin-top: 2.5vw;
+        width: 50%;
+      
+        
+    }
+    #about-img img{
+        height:40vh;
+        width: 100%;
+        padding-right: 5vh;
+
+    }
     
 }
-#page4 img{
-    margin-top: 1vh;
-    height: 98vh;
-    align-items: center;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    border : 2px solid #77c4b2;
-    border-radius: 10%;
-}
-#page4 h1{
-    align-items: center;
-    padding-left: 30vh;
-    padding-top: 10vh;
-    font-size: 15vh;
-    color: #fff;
-    position: absolute;
 
-}
-#page4 p{
-    line-height: 2vh;
-    padding-top: 40vh;
-    padding: 40vh 10vh 10vh 10vh;
-    align-items: flex-start;
-    line-height: 4vh;
-    font-size: 3vh;
-    color:rgb(53, 77, 94);
-    position: absolute;
-
-}
-
-
-
-#page2{
-    /* height: 120vh; */
-    background-color: #365E32;
-}
-#page2 .slide1h1{
-    overflow-x: auto;
-    overflow-y: hidden;
-    cursor: default;
-}
-
-#page2 h1{
-    font-size: 13vw;
-    text-transform: uppercase;
-    line-height: 23vh;
-}
-#page2 .slide1h1::-webkit-scrollbar{
-    display: none;
-}
-#page2 .slide2h1::-webkit-scrollbar{
-    display: none;
-}
-#page2 h1 .one2{
-    color: transparent;
-    -webkit-text-stroke: 1px #adadad;
-}
-#page5{
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    background-color: #fff;
-    display: flex;
-}   
-   
-#page5-part1{
-   background-color: #fff;
-    position: relative;
-    height: 100%;
-    width: 50%;
-    padding-top: 5vh;
-    padding-left: 5vh;
-   
-}
-#page5-part1 img{
-    height: 90vh;
-    width: 100%;
-    object-fit: cover;
-   border-radius: 50px;
-   border: 7px solid black;
-   
-     
-}
-#page5-part2{
-    height: 100%;
-    width: 60%;
-   
-    display: flex;
-    text-align: start;
-    justify-content: center;
-    flex-direction: column;
-  
-    background-color: #fff;
-    padding: 8vh;
-
-}
-#page5-part2 p{
-    font-size: 2vw;
-    padding-top: 10vh;
-   align-items: flex-start;
-   color: #adadad;
-}
-#page5-part2 p:hover{
-    color: #333;
-}
-
-
-/*
-#page3{
-    height: 100vh;
-    width: 100%;
-    background-color: #6d84a8;
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-   
-   
-  
-    
-}
-#page3 h1{
-    height: 15vh;
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-size: 15vh;
-}
-#page-part1{
-    height: 100vh;
-    width: 40%;
-   
-    position: absolute;
-}
-#page-part1 img{
-    height: 100vh;
-    width: 100%;
-    object-fit: contain;
-
-
-}
-#page3-part2{
-    background-color: #9d1a8c;
-    
-    height: 100vh;
-    width: 60%;
-   
-}*/
-#page3{
-    height: 100vh;
-    width: 100%;
-    background-color: #adadad;
-    display: flex;
-    
-    position: relative;
-}
-#page-part1{
-    height: 100vh;
-    width: 30%;
-    background-color: #e40a19;
-    position: absolute;
-}
-#page-part1 img{
-    height: 100vh;
-    width: 100%;
-    background-color: #930d54;
-    object-fit: cover;
-}
-#page3-part2{
-    height:100vh;
-    width: 60%;
-    background-color: #FE6918;
-    margin-left: 60vh;
-    position: relative;
-  
-}
-
-
-#page6{
-    height: 100vh;
-    width: 100%;
-    background-color: #365E32;
-}
-
-.card-container {
-    width: 26%;
-    height: 50vh;
-    position: relative;
-    border-radius: 10px;
-  }
-  
-  .card-container::before {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
-    transform: translate3d(0, 0, 0) scale(0.95);
-    filter: blur(20px);
-  }
-  
-  .card {
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    overflow: hidden;
-  }
-  
-  .card .img-content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
-    transition: scale 0.6s, rotate 0.6s, filter 1s;
-  }
-  
-  .card .img-content svg {
-    width: 50px;
-    height: 50px;
-    fill: #212121;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
-  .card .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    color: #212121;
-    padding: 20px 24px;
-    line-height: 1.5;
-    border-radius: 5px;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(50px);
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
-  .card .content .heading {
-    font-size: 32px;
-    font-weight: 700;
-    color: #08111F;
-  }
-  
-  
-  .card:hover .content {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .img-content img{
-    height: 50vh;
-    width: 100%;
-    object-fit: cover;
-    overflow: hidden;
-  }
-  
-  .card:hover .img-content {
-    scale: 2.5;
-    rotate: 30deg;
-    filter: blur(7px);
-  }
-  
-  .card:hover .img-content svg {
-    fill: transparent;
-  }
