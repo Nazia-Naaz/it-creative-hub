@@ -26,58 +26,6 @@ function init() {
 
 init()
 
-
-function cursoR(){
-    var cursorDot = document.querySelector("[data-cursor-dot]")
-var cursorOutline = document.querySelector("[data-cursor-outline]")
-
-window.addEventListener("mousemove",function(e){
-    const posX = e.clientX;
-     const posY = e.clientY;
-     cursorDot.style.left =`${posX}px`;
-     cursorDot.style.top =`${posY}px`;
-
-     cursorOutline.style.left =`${posX}px`;
-     cursorOutline.style.top =`${posY}px`;
-
-     cursorOutline.animate({
-        left:`${posX}px`,
-        top: `${posY}px`,
-     }, {duration: 1000, fill: "forwards"});
-})
-}
-cursoR()
-
-var slide1h1 = document.querySelectorAll('#page2 .slide1h1 h1');
-slide1h1.forEach(function (elem) {
-  gsap.to(elem, {
-    transform: 'translateX(-96%)',
-    ease: 'linear',
-    duration: 4,
-    scrollTrigger: {
-      trigger: '#page2',
-      scroller: '#main',
-       /*markers: true,*/
-      scrub: 3
-    }
-  })
-})
-var slide2h1 = document.querySelectorAll('#page2 .slide2h1 h1');
-slide2h1.forEach(function (elem) {
-  gsap.to(elem, {
-    transform: 'translateX(0%)',
-    ease: 'linear',
-    duration: 4,
-    scrollTrigger: {
-      trigger: '#page2',
-      scroller: '#main',
-      // markers: true,
-      scrub: 3
-    }
-  })
-})
-
-
 function firstFageAnimation(){
     var tl = gsap.timeline()
     tl.from("#main",{
@@ -120,7 +68,6 @@ function firstFageAnimation(){
 }
 
 firstFageAnimation()
-
 
 
 
