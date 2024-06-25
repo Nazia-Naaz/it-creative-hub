@@ -179,7 +179,7 @@ button:hover{
     }
     #about-img{
         width: 100%;
-        height: 45%;
+        height: auto;
         padding-left: 5vw;
 
     }
