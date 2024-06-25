@@ -116,6 +116,34 @@ button:hover{
     padding-right: 10vh;
 }
 
+
+
+
+#page2{
+    background-color: #08111F;
+}
+#page2 .slide1h1{
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: default;
+}
+
+#page2 h1{
+    font-size: 13vw;
+    text-transform: uppercase;
+    line-height: 23vh;
+}
+#page2 .slide1h1::-webkit-scrollbar{
+    display: none;
+}
+#page2 .slide2h1::-webkit-scrollbar{
+    display: none;
+}
+#page2 h1 .one2{
+    color: transparent;
+    -webkit-text-stroke: 1px #adadad;
+}
+
 @media (max-width:600px) {
     #navbar{
       height: 60px;
