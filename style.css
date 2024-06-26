@@ -348,6 +348,7 @@ button:hover{
       }
       #page4{
         padding: 1vw;
+          gap:4vh;
       }
       .card .content .heading {
         font-size: 27px;
@@ -360,9 +361,7 @@ button:hover{
         font-weight: 300;
 
       }
-      #page4{
-          gap:4vh;
-      }
+      
   }
 
 @media (max-width:600px) {
