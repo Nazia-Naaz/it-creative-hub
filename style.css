@@ -360,6 +360,9 @@ button:hover{
         font-weight: 300;
 
       }
+      #page5{
+          gap:5vh;
+      }
   }
 
 @media (max-width:600px) {
